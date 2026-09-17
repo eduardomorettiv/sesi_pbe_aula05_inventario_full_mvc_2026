@@ -16,3 +16,8 @@ const create= (req, res)=>{
 const read = (req, res)=>{
     res.json(bens)
 }
+
+module.exports = {
+    create,
+    read
+}

@@ -9,10 +9,18 @@
     },
     {
         "id":2,
-        "item":"Mesa de escritório",
-        "local":"Diretoria",
-        "dataRegistro":"2026-09-10",
-        "valor":780.00,
-        "patrimonio":"300-404j"
+        "item":"Geladeira",
+        "local":"Cozinha",
+        "dataRegistro":"2026-05-17",
+        "valor":50.00,
+        "patrimonio":"300-405j"
+    },
+    {
+        "id":3,
+        "item":"Otávio",
+        "local":"Sala de aula",
+        "dataRegistro":"2026-09-17",
+        "valor":1000000.00,
+        "patrimonio":"300-406j"
     }
 ]
