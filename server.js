@@ -1,4 +1,5 @@
 const express = require("express")
+const cors=require("cors")
 
 const rotaInicial = (req, res) => {
     res.json("Back-end respondendo")
@@ -6,6 +7,7 @@ const rotaInicial = (req, res) => {
 
 //Configurações do servidor
 const app = express()
+app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 const porta = 3000
 

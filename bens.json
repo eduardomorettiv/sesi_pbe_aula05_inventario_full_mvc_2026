@@ -1,3 +1,18 @@
 [
-    {}
+    {
+        "id":1,
+        "item":"Mesa de escritório",
+        "local":"Diretoria",
+        "dataRegistro":"2026-09-10",
+        "valor":780.00,
+        "patrimonio":"300-404j"
+    },
+    {
+        "id":2,
+        "item":"Mesa de escritório",
+        "local":"Diretoria",
+        "dataRegistro":"2026-09-10",
+        "valor":780.00,
+        "patrimonio":"300-404j"
+    }
 ]
