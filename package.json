@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "name": "exemplo-do-wellifabio_aula05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
