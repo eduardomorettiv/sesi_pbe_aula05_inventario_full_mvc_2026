@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário</title>
+</head>
+<body>
+    <header><h1>Inventário</h1></header>
+    <main>
+        <section>
+            <form action="http://localhost:3000/bens" method="POST">
+                <input type="text" name="item" placeholder="nome do item" required>
+                <input type="text" name="local" placeholder="local" required>
+                <input type="date" name="dataRegistro" required>
+                <input type="number" step="0.01" name="valor" placeholder="valor do item" required>
+                <input type="text" name="patrimonio" placeholder="Número de patrimônio" required>
+                <input type="submit" value="enviar">
+            </form>
+        </section>
+        <section>
+            <table border="1">
+                <thead>
+                    <th>Item</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                    <th>Valor</th>
+                    <th>Patrimonio</th>
+                </thead>
+                <tbody id="tabela">
+                    <script>
+                        fetch('http://localhost:3000/bens')
+                        .then(resp => resp.json())
+                        .then(resp =>{
+                            resp.forEach(p=>{
+                                const linha = document.createElement('tr')
+                                linha.innerHTML = `
+                                <td>${p.item}</td>
+                                <td>${p.local}</td>
+                                <td>${p.dataRegistro}</td>
+                                <td>${p.valor}</td>
+                                <td>${p.patrimonio}</td>
+                                `
+                                tabela.appendChild(linha)
+                            })
+                        })
+                    </script>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer><h2>by eduardo</h2></footer>
+</body>
+</html>
